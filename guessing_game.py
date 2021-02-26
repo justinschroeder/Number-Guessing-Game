@@ -64,8 +64,8 @@ def start_game():
                 print('OOPS! YOU NEED TO ENTER A NUMBER!')
         if high_score == 0 or ticker < high_score:
             high_score = ticker
-        replay = input('WOULD YOU LIKE TO PLAY AGAIN?? Y/N  >> ')
-        if replay == 'y'.lower():
+        replay = input('WOULD YOU LIKE TO PLAY AGAIN??\nENTER Y TO PLAY AGAIN.  >> ')
+        if replay == 'Y'.lower():
             continue
         else:
             print('OKAY! SEE YOU NEXT TIME!.')
