@@ -47,6 +47,7 @@ def start_game():
                 guess = int(input('>> '))
                 if guess < 1 or guess > 10:
                     print('THAT NUMBER IS OUTSIDE OF THE RANGE.\nPLEASE ENTER A NEW NUMBER.\n')
+                    ticker+=1
                     continue
                 if guess < num:
                     print('THE NUMBER IS HIGHER. GUESS AGAIN...\n')
@@ -62,6 +63,7 @@ def start_game():
                 break
             except ValueError:
                 print('OOPS! YOU NEED TO ENTER A NUMBER!')
+                ticker += 1
         if high_score == 0 or ticker < high_score:
             high_score = ticker
         replay = input('WOULD YOU LIKE TO PLAY AGAIN??\nENTER Y TO PLAY AGAIN.  >> ')
